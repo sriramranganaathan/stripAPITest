@@ -1,5 +1,6 @@
 package apiPayment;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,14 +8,15 @@ import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Token;
 
+import properties.PropertiesFile;
+
 public class CreateToken {
 	
-	public static void main(String args[]) throws StripeException{
+	public static void main(String args[]) throws StripeException, IOException{
 		
-		System.setProperty("https.proxyHost", "");
-		System.setProperty("https.proxyPort", "");
+		Proxy.setProxy();
 		
-		Stripe.apiKey = "";
+		Stripe.apiKey = PropertiesFile.getProperty("Secretkey");
 
 		Map<String, Object> tokenParams = new HashMap<String, Object>();
 		Map<String, Object> cardParams = new HashMap<String, Object>();
