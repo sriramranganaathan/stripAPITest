@@ -13,10 +13,10 @@ public class CreateCustomer {
 
 	public static void main(String[] args) throws StripeException {
 		
-		System.setProperty("https.proxyHost", "19.12.80.237");
-		System.setProperty("https.proxyPort", "83");
+		System.setProperty("https.proxyHost", "");
+		System.setProperty("https.proxyPort", "");
 		
-		Stripe.apiKey = "sk_test_S59kHC1PUPPs5ap0XmUSFV8i00IF52Ol80";
+		Stripe.apiKey = "";
 		
 		//add customer
 		createCustomer();
