@@ -1,4 +1,4 @@
-package apiPayment;
+package proxyConfiguration;
 
 import java.io.IOException;
 

@@ -10,6 +10,7 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.Customer;
 
 import properties.PropertiesFile;
+import proxyConfiguration.Proxy;
 
 public class CreateCustomer {
 	

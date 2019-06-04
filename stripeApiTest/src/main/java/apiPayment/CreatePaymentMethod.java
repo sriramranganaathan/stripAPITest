@@ -9,6 +9,7 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentMethod;
 
 import properties.PropertiesFile;
+import proxyConfiguration.Proxy;
 
 public class CreatePaymentMethod {
 	
