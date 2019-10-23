@@ -20,8 +20,8 @@ public class ChargeRequest {
 		
 		HashMap<String, Object> chargeMap = new HashMap<String, Object>();
 		chargeMap.put("amount", "200");
-		chargeMap.put("Currency", "USD");
-		chargeMap.put("source", "");
+		chargeMap.put("currency", "USD");
+		chargeMap.put("source", "tok_amex");
 		Charge.create(chargeMap);
 	}
 

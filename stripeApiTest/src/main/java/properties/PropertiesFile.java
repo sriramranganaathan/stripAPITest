@@ -7,7 +7,7 @@ import java.util.Properties;
 public class PropertiesFile {
 	
 	public static String getProperty(String key) throws IOException{
-		FileReader reader = new FileReader(".//resources//stripeResources.properties");
+		FileReader reader = new FileReader(".//src//main//resources//stripeResources//stripeProperties.properties");
 		Properties prop = new Properties();
 		prop.load(reader);
 		return prop.getProperty(key);
